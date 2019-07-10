@@ -1,4 +1,4 @@
-# BasicTerraformTemplate
+# Terraform Template
 The first command to run for a new configuration is **terraform init** which initializes various settings and data, download provider plugin and install in a subdirectory of the current working directory.
 
 Once we init we want to know what exactly is going to happen on aws infrastructure, this can be done by running command **terraform plan**. Terraform plan is used to create an execution plan which is a way to check whether the set of changes matches our expectation without making any real infrastructure changes.
