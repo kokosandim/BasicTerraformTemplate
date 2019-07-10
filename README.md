@@ -21,4 +21,4 @@ Step 5: Run command "./terraform apply" or "terraform apply" to actually create 
 
 Step 6: Run command "./terraform destroy" or "terraform destroy" to destroy created EC2 instance. This will only delete instance created through terraform apply.
 
-You can [download](https://www.terraform.io/downloads.html) terraform for you main OS
+You can download terraform for you main OS [here](https://www.terraform.io/downloads.html).
