@@ -22,3 +22,5 @@ Step 4: Запускаем команду "./terraform plan" или "terraform p
 Step 5: Запускаем команду "./terraform apply" или "terraform apply" чтоб создать EC2 инстанс.
 
 Step 6: Запускаем команду "./terraform destroy" или "terraform destroy" чтоб удалить созданный EC2 инстанс. Командой destroy мы можем удалить тоьлко тот инстанс, который был создан предыдущей командой apply.
+
+PS Этот репозиторий явдяется дополнительным материалом к статье на [medium.com](https://medium.com/@kokosandim/terraform-%D0%B8%D0%BD%D1%84%D1%80%D0%B0%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%BA%D0%B0%D0%BA-%D0%BA%D0%BE%D0%B4-iac-9a13fb004631).
