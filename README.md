@@ -1,24 +1,24 @@
 # Terraform Template
-The first command to run for a new configuration is **terraform init** which initializes various settings and data, download provider plugin and install in a subdirectory of the current working directory.
+Первая команда для запуска новой конфигурации - это **terraform init** которая инициализирует различные настройки, загружает плагин клауд провайдера и устанавливает его в подкаталог текущей рабочей директории.
 
-Once we init we want to know what exactly is going to happen on aws infrastructure, this can be done by running command **terraform plan**. Terraform plan is used to create an execution plan which is a way to check whether the set of changes matches our expectation without making any real infrastructure changes.
+Как только мы начнем, мы хотим знать, что именно произойдет в инфраструктуре aws, это можно сделать, выполнив команду **terraform plan**. Terraform plan используется для создания плана выполнения, который является способом проверки соответствия набора изменений нашим ожиданиям без каких-либо реальных изменений инфраструктуры.
 
-**terraform apply** command is used to apply the changes required to reach the desired state. Terraform apply scans current directory for the configuration and apply the changes on aws.
+**terraform apply** команда используется для применения изменений. Terraform apply sсканирует текущий каталог для конфигурации и применяет изменения в aws.
 
-Once we are done with the changes we can run **terraform destroy** to destroy terraform managed infrastructure.
+Как только мы закончим с изменениями, мы можем запустить **terraform destroy** для уничтожения управляемой инфраструктуры под управлением terraform..
 
-## Steps to run this code:
+## Этапы запуска кода:
 
-Step 1: Clone this repository 
+Step 1: Клонировать репозиторий 
 
-Step 2: Replace "ACCESS_KEY_HERE" with aws access key and "SECRET_KEY_HERE" with aws secret key. These keys can be generated from IAM module of aws.
+Step 2: Заменить "ACCESS_KEY_HERE" с свой aws access key и "SECRET_KEY_HERE" на свой aws secret key. Эти ключи генерируются из модуля IAM.
 
-Step 3: Run command "./terraform init" or "terraform init" to init configuration workspace
+Step 3: [Скачать](https://www.terraform.io/downloads.html) и распаковать terraform.
 
-Step 4: Run command "./terraform plan" or "terraform plan" to see output which is going to be executed.
+Step 3: Запускаем команду "./terraform init" или "terraform init" для инициализации нашего рабочего каталога
 
-Step 5: Run command "./terraform apply" or "terraform apply" to actually create EC2 instance
+Step 4: Запускаем команду "./terraform plan" или "terraform plan" чтоб увидеть потенциальные изменения которые мы можем внести применив текущий конфиг.
 
-Step 6: Run command "./terraform destroy" or "terraform destroy" to destroy created EC2 instance. This will only delete instance created through terraform apply.
+Step 5: Запускаем команду "./terraform apply" или "terraform apply" чтоб создать EC2 инстанс.
 
-You can download terraform for you main OS [here](https://www.terraform.io/downloads.html).
+Step 6: Запускаем команду "./terraform destroy" или "terraform destroy" чтоб удалить созданный EC2 инстанс. Командой destroy мы можем удалить тоьлко тот инстанс, который был создан предыдущей командой apply.
