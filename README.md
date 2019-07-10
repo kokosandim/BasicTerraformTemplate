@@ -1,14 +1,15 @@
 # BasicTerraformTemplate
-The first command to run for a new configuration is terraform init which initializes various settings and data, download provider plugin and install in a subdirectory of the current working directory.
+The first command to run for a new configuration is **terraform init** which initializes various settings and data, download provider plugin and install in a subdirectory of the current working directory.
 
-Once we init we want to know what exactly is going to happen on aws infrastructure, this can be done by running command terraform plan. Terraform plan is used to create an execution plan which is a way to check whether the set of changes matches our expectation without making any real infrastructure changes.
+Once we init we want to know what exactly is going to happen on aws infrastructure, this can be done by running command **terraform plan**. Terraform plan is used to create an execution plan which is a way to check whether the set of changes matches our expectation without making any real infrastructure changes.
 
-terraform apply command is used to apply the changes required to reach the desired state. Terraform apply scans current directory for the configuration and apply the changes on aws.
+**terraform apply** command is used to apply the changes required to reach the desired state. Terraform apply scans current directory for the configuration and apply the changes on aws.
 
-Once we are done with the changes we can run terraform destroy to destroy terraform managed infrastructure.
+Once we are done with the changes we can run **terraform destroy** to destroy terraform managed infrastructure.
 
-Steps to run this code:
-Step 1: Clone this repository
+## Steps to run this code:
+
+Step 1: Clone this repository 
 
 Step 2: Replace "ACCESS_KEY_HERE" with aws access key and "SECRET_KEY_HERE" with aws secret key. These keys can be generated from IAM module of aws.
 
