@@ -9,7 +9,7 @@ variable "instance_type" {
 }
 
 resource "aws_instance" "ec2_instance" {
- ami = "ami-0cf31d971a3ca20d6"
+ ami = "ami-0d8f6eb4f641ef691"
  instance_type = "${var.instance_type}"
 }
 
